@@ -19,10 +19,9 @@ recordRoutes.route("/record").get(function (req, res) {
    .collection("records")
    .find({})
    .toArray(function (err, result) {
-     if (err) throw err;
-     res.json(result);
-     console.log(result);
-   });
+    if (err) throw err;
+    res.json(result);
+  });
 });
  
 // This section will help you get a single record by id
